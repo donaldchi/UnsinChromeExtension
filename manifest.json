@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Unsin Fortune Helper",
+  "version": "0.1.2",
+  "description": "unsin.co.kr 오늘의 운세 페이지에서 프로필 입력을 돕고, 결과를 브라우저 안에서 임시로 표시하는 비공식 도구입니다.",
+  "action": {
+    "default_title": "Unsin Fortune Helper",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.unsin.co.kr/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.unsin.co.kr/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Unsin Fortune Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <div class="app">
+    <div class="header">
+      <div>
+        <h1>오늘의 운세</h1>
+        <p><a href="https://www.unsin.co.kr/unse/free/todayline/form?linenum=01&sid=tunse" target="_blank" rel="noreferrer">운세의 신</a> 결과를 확장 프로그램 안에서 보기</p>
+      </div>
+      <div class="badges">
+        <span class="badge">비공식</span>
+      </div>
+    </div>
+
+    <section class="card">
+      <label for="name">이름</label>
+      <input id="name" type="text" placeholder="이름을 입력하세요" autocomplete="name">
+
+      <label>성별</label>
+      <div class="segmented">
+        <button type="button" data-gender="male">남자</button>
+        <button type="button" data-gender="female">여자</button>
+      </div>
+
+      <div class="grid3">
+        <div>
+          <label for="birthYear">년</label>
+          <select id="birthYear"></select>
+        </div>
+        <div>
+          <label for="birthMonth">월</label>
+          <select id="birthMonth"></select>
+        </div>
+        <div>
+          <label for="birthDay">일</label>
+          <select id="birthDay"></select>
+        </div>
+      </div>
+
+      <label for="birthHour">태어난 시간</label>
+      <select id="birthHour">
+        <option value="unknown">모름</option>
+        <option value="ja">子 23:30 ~ 01:29</option>
+        <option value="chuk">丑 01:30 ~ 03:29</option>
+        <option value="in">寅 03:30 ~ 05:29</option>
+        <option value="myo">卯 05:30 ~ 07:29</option>
+        <option value="jin">辰 07:30 ~ 09:29</option>
+        <option value="sa">巳 09:30 ~ 11:29</option>
+        <option value="oh">午 11:30 ~ 13:29</option>
+        <option value="mi">未 13:30 ~ 15:29</option>
+        <option value="shin">申 15:30 ~ 17:29</option>
+        <option value="yu">酉 17:30 ~ 19:29</option>
+        <option value="sul">戌 19:30 ~ 21:29</option>
+        <option value="hae">亥 21:30 ~ 23:29</option>
+      </select>
+
+      <label>양력 / 음력</label>
+      <div class="segmented calendar">
+        <button type="button" data-calendar="solar">양력</button>
+        <button type="button" data-calendar="lunar">음력 평달</button>
+        <button type="button" data-calendar="leap_lunar">음력 윤달</button>
+      </div>
+    </section>
+
+    <section class="summary-box">
+      <p>입력한 생년월일 정보로 운세의 신 오늘의 운세를 불러와 확장 프로그램 안에서 정리해 보여줍니다.</p>
+      <p>프로필은 이 브라우저에 저장되고, 운세 결과는 임시로 보관됩니다.</p>
+    </section>
+
+    <div class="actions fortune-actions">
+      <button id="save" class="secondary">저장</button>
+      <button id="openYesterday" class="secondary">어제</button>
+      <button id="openToday" class="primary">오늘</button>
+      <button id="openTomorrow" class="secondary">내일</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <footer>
+      <a href="privacy.html" target="_blank">개인정보 처리방침</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

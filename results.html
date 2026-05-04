@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>오늘의 운세 - Unsin Fortune Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="result-page">
+  <main class="result-shell">
+    <div class="result-hero">
+      <div>
+        <p class="eyebrow">Unsin Fortune Helper</p>
+        <h1 id="resultTitle">오늘의 운세</h1>
+        <p class="source-credit">출처: <a id="headerSourceLink" href="https://www.unsin.co.kr/unse/free/todayline/form?linenum=01&sid=tunse" target="_blank" rel="noreferrer">운세의 신</a></p>
+      </div>
+      <div class="badges">
+        <span class="badge">비공식</span>
+      </div>
+    </div>
+
+    <section id="weeklyChart" class="weekly-chart card hidden"></section>
+
+    <section id="empty" class="card hidden">
+      <h2>저장된 결과가 없습니다</h2>
+      <p>확장 프로그램에서 오늘의 운세를 먼저 불러와 주세요.</p>
+    </section>
+
+    <section id="resultCard" class="fortune-card hidden">
+      <div id="resultText"></div>
+    </section>
+
+    <section class="date-picker card">
+      <input id="targetDate" type="date" aria-label="날짜 선택">
+      <button id="openDate" class="secondary">날짜 보기</button>
+    </section>
+
+    <section class="card disclaimer">
+      <p>
+        이 결과는 운세의 신에서 제공하는 무료 운세 결과를 사용자의 브라우저 안에서 보기 좋게 정리한 것입니다.
+      </p>
+      <p>
+        원문:
+        <a id="sourceLink" href="https://www.unsin.co.kr/unse/free/todayline/form?linenum=01&sid=tunse" target="_blank" rel="noreferrer">운세의 신</a>
+      </p>
+    </section>
+
+    <div class="actions result-actions">
+      <button id="yesterday" class="secondary">어제</button>
+      <button id="tomorrow" class="secondary">내일</button>
+      <button id="settings" class="secondary">설정</button>
+    </div>
+  </main>
+
+  <script src="results.js"></script>
+</body>
+</html>
