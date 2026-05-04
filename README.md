@@ -1,6 +1,8 @@
-# Unsin Fortune Helper
+# UnsinChromeExtension
 
-`Unsin Fortune Helper`는 운세의 신(`unsin.co.kr`)의 오늘의 운세 결과를 Chrome 확장 프로그램 안에서 보기 좋게 정리해 보여주는 비공식 도우미입니다.
+`UnsinChromeExtension`는 운세의 신(`unsin.co.kr`)의 오늘의 운세 페이지에서 프로필 입력을 돕고, 사용자의 브라우저 안에서 결과를 임시로 표시하는 비공식 Chrome 확장 프로그램입니다.
+
+본 확장 프로그램은 운세의 신, 스포츠조선 및 관련 회사가 제공하거나 승인하거나 제휴한 도구가 아닙니다.
 
 ## 주요 기능
 
@@ -44,6 +46,10 @@
 - `content.js`: 기존 본문 자동 입력/추출 로직
 - `styles.css`: 공통 화면 스타일
 - `privacy.html`: 개인정보 처리 안내
+
+## Privacy Policy
+
+https://donaldchi.github.io/UnsinChromeExtension/privacy.html
 
 ## 참고
 
