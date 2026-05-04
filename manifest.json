@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Unsin Fortune Helper",
+  "name": "Unsin Chrome Extension",
   "version": "0.1.2",
-  "description": "unsin.co.kr 오늘의 운세 페이지에서 프로필 입력을 돕고, 결과를 브라우저 안에서 임시로 표시하는 비공식 도구입니다.",
+  "description": "`UnsinChromeExtension`는 운세의 신(`unsin.co.kr`)의 오늘의 운세 페이지에서 프로필 입력을 돕고, 사용자의 브라우저 안에서 결과를 임시로 표시하는 비공식 Chrome 확장 프로그램입니다.",
   "action": {
-    "default_title": "Unsin Fortune Helper",
+    "default_title": "Unsin Chrome Extension",
     "default_popup": "popup.html"
   },
   "permissions": [
